@@ -1,0 +1,246 @@
+
+body {
+    margin: 0;
+}
+
+.lavish {
+    font-family: "Lavishly Yours", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.container {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr ;
+}
+
+.header {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-image: url("Assets/Chef_cooking.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 100vw;
+}
+
+.headerText {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    padding-left: 20px;
+    line-height: 300px;
+    font-size: 25px;
+    color: white;
+    background-color: black    ;
+}
+
+.gradThingy {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.1));
+}
+
+.nav {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    height: 50px;
+    width: 100vw;
+    background-color: #3b3b3b;
+    position: sticky;
+    top: 0;
+}
+
+.navbar {
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+  }
+  
+a {
+    display: block;
+    height: 35px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #3b3b3b;
+    text-decoration: none;
+    color: #ede7e4;
+}
+
+@keyframes navHover {
+    0% {background-color: #3b3b3b; color: #ede7e4; text-decoration: underline; text-decoration-color: rgba(59, 59, 59,0);}
+    100% {background-color: #ede7e4; color: #3b3b3b; text-decoration: underline; text-decoration-color: rgba(59, 59, 59,1);}
+}
+
+a:hover {
+    animation-name: navHover;
+    animation-duration: 0.5s;
+    background-color: #ede7e4;
+    color: #3b3b3b;
+}
+
+
+
+.about {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding-top: 20px;
+    background-color: #ede7e4;
+    height: 350px;
+    width: 100vw;
+}
+
+.aboutText {
+    margin: 0;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+
+.established {
+    font-size: 15px;
+}
+
+.name {
+    margin-top: 25px;
+    font-size: 40px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+} 
+
+
+.image1{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-image: url("Assets/elegant-restaurant-interior-with-view-city-night-warm-lighting-soft-music-create-romantic-inviting-atmosphere_14117-555778.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 100vw;
+}
+
+.containerMenu {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 50px 200px 50px 200px 50px 200px;
+}
+
+.breakfastTitle {
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.lunchTitle {
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.dinnerTitle {
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    grid-row-start: 5;
+    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.breakfast {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+
+.lunch {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    grid-row-start: 4;
+    grid-row-end: 4;
+}
+
+.dinner {
+    text-align: center;
+    line-height: 100px;
+    font-size: 30px;
+    grid-row-start: 6;
+    grid-row-end: 6;
+}
+
+.item1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.item2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+}
+
+.item3 {
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+@keyframes menuHover {
+    0% {background-color: white;}
+    100% {background-color: #ede7e4;}
+}
+
+.item1:hover, .item2:hover, .item3:hover {
+    animation-name: menuHover;
+    animation-duration: 0.5s;
+    background-color: #ede7e4;
+
+}
+
+.contact {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    background-color: #6e1818;
+    height: 400px;
+    width: 100vw;
+    line-height: 100px;
+    text-align: center;
+    color: #ede7e4;
+    font-size: 30px;
+}
+
+.contactText {
+    font-size: 20px;
+    line-height: 30px;
+}
